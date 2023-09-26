@@ -115,29 +115,7 @@ class _LoginScreen extends ConsumerState<LoginScreen>
                     position: slideTransition,
                     child: Column(
                       children: [
-                        Align(
-                            alignment: Alignment.centerLeft,
-                            child: ElevatedButton.icon(
-                                style: ElevatedButton.styleFrom(
-                                    backgroundColor: Colors.white),
-                                onPressed: () {
-                                  sendDetailsToFirebsae(
-                                      email: emailContoller.text,
-                                      Password: passwordContoller.text,
-                                      Latitiude: "",
-                                      longitude: "",
-                                      name: nameContoller.text);
-                                },
-                                icon: Icon(
-                                  Icons.add_circle_outline_sharp,
-                                  color: Colors.black,
-                                ),
-                                label: Text(
-                                  'Create Account.',
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                ))),
+                      
                         SizedBox(
                           height: 20,
                         ),
@@ -209,6 +187,29 @@ class _LoginScreen extends ConsumerState<LoginScreen>
                       ],
                     ),
                   ),
+                    Align(
+                            alignment: Alignment.centerLeft,
+                            child: ElevatedButton.icon(
+                                style: ElevatedButton.styleFrom(
+                                    backgroundColor: Colors.white),
+                                onPressed: () {
+                                  sendDetailsToFirebsae(
+                                      email: emailContoller.text,
+                                      Password: passwordContoller.text,
+                                      Latitiude: "",
+                                      longitude: "",
+                                      name: nameContoller.text);
+                                },
+                                icon: Icon(
+                                  Icons.add_circle_outline_sharp,
+                                  color: Colors.black,
+                                ),
+                                label: Text(
+                                  'Next...',
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontWeight: FontWeight.bold),
+                                ))),
                 ),
               ])),
         ),
